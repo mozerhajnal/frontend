@@ -1,0 +1,36 @@
+.footer .box-container {
+	margin-top: 3rem;
+}
+
+.footer .box-container .box {
+	text-align: center;
+}
+
+.footer .box-container .box a {
+	display: block;
+	font-size: 1.5rem;
+	padding: 1rem 0;
+	text-decoration: none;
+}
+
+.footer .box-container .box h3 {
+	font-size: 2rem;
+}
+
+@keyframes zoom-in-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.footer .box-container .box a {
+		font-size: 1.5rem;
+	}
+}
