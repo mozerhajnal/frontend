@@ -22,12 +22,13 @@ import Purchases from './pages/Purchases/Purchases';
 import Navigation from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
-const PageLayout = () => (
+function PageLayout(){
+  return(
   <>
     <Navigation />
     <Footer />
   </>
-);
+)};
 
 function App() {
   const lastLoggedInUser = JSON.parse(localStorage.getItem('user'));
