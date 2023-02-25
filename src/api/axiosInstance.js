@@ -4,12 +4,12 @@ export default async function makeAxiosRequest(
   method,
   urlPath,
   token = null,
-  data = null,
+  data = null
 ) {
   try {
     const res = await axiosInstance({
       baseURL: process.env.REACT_APP_API_SERVER,
-      method,
+      method: 'cors',
       url: urlPath,
       headers: {
         Authorization: `Bearer ${token}`,
