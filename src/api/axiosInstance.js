@@ -9,7 +9,7 @@ export default async function makeAxiosRequest(
   try {
     const res = await axiosInstance({
       baseURL: process.env.REACT_APP_API_SERVER,
-      method: 'cors',
+      mode: 'cors',
       url: urlPath,
       headers: {
         Authorization: `Bearer ${token}`,
